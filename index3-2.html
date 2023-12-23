@@ -1,0 +1,210 @@
+<html>
+
+ <head>
+
+  <title>Mой проект</title>
+
+  <style>
+
+body {
+
+font: 18pt Arial, Helvetica, sans-serif;
+
+background: hsl(204, 96%, 44%)(43, 69%, 80%);
+
+
+}
+
+h2 {
+
+font-size: 37px;
+
+color: #FF0000 ;
+
+margin-top: 1;
+
+
+}
+
+.container {
+
+width: 1400px;
+height: 700px;
+
+margin: 0 auto;
+
+background: hsl(2, 96%, 44%);
+
+}
+
+
+
+.sidebar {
+
+margin-top: 15px;
+
+width: 115px;
+
+padding:  10px;
+
+float: left;
+color: purple;
+
+}
+
+.content {
+
+margin-left: 130px; /* Отступ слева */
+
+padding: 40px; /* Отступы внутри правого блока */
+
+background: linear-gradient(-45deg, #33ccff , #ff99cc );
+     background-size: 400% 400%;
+     animation: gradient 15s ease infinite;
+     height: 100vh;
+color: #0c0202; /* Цвет фона правого блока */
+width: 1200px; /* Ширина слоя */
+height: 550px;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.footer {
+
+background: hsl(2, 96%, 44%); /* Цвет фона нижнего блока-подвала */
+
+color: black; /* Цвет текста подвала */
+
+padding: 5px; /* Отступы внутри блока */
+
+clear: left; /* Отменяем действие float */
+
+}
+   .markers li::marker {
+    color: hsl(258, 100%, 50%);
+    font-size: 18px;
+    list-style-type:circle;
+}
+
+  .btn {
+      background: #b5bdc8;
+    background: linear-gradient(to top, #33ccff 0%, #ff99cc 36%, #28343b 100%);
+    font-size: 14px;
+    padding: 10px 20px;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 20px;
+      }
+
+     .animation-bg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #042548;
+  height: 150px;
+}
+.bg-ex-stars {
+  background: url(%D0%BA%D0%BE%D0%B41.png);
+  background-position: 0 0;
+  background-repeat: repeat;
+  animation: animated-bg 60s linear infinite;
+  width: 100%;
+  height: 150%;
+}
+@keyframes animated-bg {
+  from { background-position: 0 0; }
+  to { background-position: 0 1000px; }
+}
+.wrapper {
+        position: relative;
+        width: 112px;
+        height: 130px;
+        margin-bottom: 15px;
+    }
+    #dd {
+        position: absolute;
+        height: 130px !important;
+    }
+    </style>
+
+   </head>
+
+   <body>
+      <script>
+        var width=112,r=1;
+
+        setTimeout('ff()', 100);
+        function ff() {
+        d=document.getElementById('dd');
+
+        if(d.width>2&&r==1){
+            d.style.left=(parseInt(d.style.left)+1)+"px";
+            d.width=d.width-2;
+        }else if(d.width<width&&r==0){
+            d.style.left=(parseInt(d.style.left)-1)+"px";
+            d.width=d.width+2;
+        }else {r=(r==1?0:1);}
+        setTimeout('ff()', 100);
+        }
+
+        </script>
+
+
+      <div class="animation-bg">
+         <div class="bg-ex-stars"></div>
+       </div>
+
+    <div class="container">
+
+           <div class="header">   </div>
+
+           <div class="sidebar">
+
+
+
+            <br><br> <a href="plan.html"  class="btn">Разработки</a><br><br>
+
+     <a href="zn.html"  class="btn">Новинки</a><br><br>
+
+     <a href="um.html"  class="btn">Обзор</a><br><br>
+     <div class="wrapper">
+         <p><a href="index.html" ><p>Удачи</p></a>
+
+      </div>
+
+   </div>
+
+   <div class="content">
+
+      <br><br><h2><b>Новинки компьютерной техники и новейшие разработки!</b></h2>
+
+         <ul class="markers">
+<UL>
+      <LI> Здесь вы узнаете о всех новинках в IT области.</LI><br><br>
+
+
+   <LI> Вы сможете узнать о каждой новинке в отдельности.</LI><br><br>
+
+    <LI> А также познакомитесь с новейшими разработками.</LI><br><br><br><br>
+        </UL>
+
+
+
+</div>
+
+<div class="footer">&copy; Велигура Иван</div>
+
+</div>
+
+</body>
+
+</html>
